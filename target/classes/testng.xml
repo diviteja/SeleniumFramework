@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="portal">
+    <listeners>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+    </listeners>
+    <test name="LoginTest">
+        <parameter name="browser" value="chrome"/> <!-- Example of passing parameters to tests -->
+        <classes>
+            <!-- Test classes to run -->
+            <class name="org.example.test.LoginTest"/>
+        </classes>
+    </test>
+</suite>
