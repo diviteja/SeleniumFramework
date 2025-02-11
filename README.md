@@ -1,2 +1,3 @@
 Test Automation Framework
+
 A comprehensive, modular Selenium-based automation framework designed from scratch. This framework is focused on creating a full, structured architecture for end-to-end test automation. It integrates Selenium WebDriver with TestNG for test execution and reporting, uses TestNG listeners for enhanced logging, and follows the Page Object Model (POM) for maintainability and scalability. Built with Maven for dependency management and build automation, this framework provides a flexible foundation for automated testing, with a focus on architecture and scalability rather than individual test cases.
