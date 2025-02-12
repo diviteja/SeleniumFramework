@@ -2,6 +2,7 @@
 <suite name="portal">
     <listeners>
         <listener class-name="org.testng.reporters.XMLReporter"/>
+        <listener class-name="org.example.utils.TestListener"/>
     </listeners>
     <test name="LoginTest">
         <parameter name="browser" value="chrome"/> <!-- Example of passing parameters to tests -->
