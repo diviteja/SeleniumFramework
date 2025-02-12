@@ -22,7 +22,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "TestNG./Users/diviteja/IdeaProjects/Selenium_Cloudrein/src/main/resources/testng.xml.executor": "Debug",
+    "TestNG./Users/diviteja/IdeaProjects/Selenium_Cloudrein/src/main/resources/testng.xml.executor": "Run",
     "TestNG.LoginTest.login.executor": "Run",
     "git-widget-placeholder": "Merging main"
   }
