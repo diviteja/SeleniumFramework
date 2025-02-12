@@ -1,11 +1,6 @@
 package org.example.pageobjects;
 
-import org.example.pageobjects.base.BaseTest;
 import org.openqa.selenium.*;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
 
 public class Loginpage {
 
