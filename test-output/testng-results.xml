@@ -1,21 +1,60 @@
- <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-21T06:33:01 GMT" name="portal" finished-at="2025-01-21T06:33:05 GMT" duration-ms="4564">
+  <suite started-at="2025-02-12T21:33:45 GMT" name="portal" finished-at="2025-02-12T21:34:50 GMT" duration-ms="64281">
     <groups>
     </groups>
-    <test started-at="2025-01-21T06:33:01 GMT" name="LoginTest" finished-at="2025-01-21T06:33:05 GMT" duration-ms="4564">
+    <test started-at="2025-02-12T21:33:45 GMT" name="LoginTest" finished-at="2025-02-12T21:34:50 GMT" duration-ms="64281">
       <class name="org.example.test.LoginTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:org.example.test.LoginTest@5ef60048]" started-at="2025-01-21T06:33:01 GMT" name="init" finished-at="2025-01-21T06:33:03 GMT" duration-ms="1985" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:org.example.test.LoginTest@2e6a8155]" started-at="2025-02-12T21:33:45 GMT" name="init" finished-at="2025-02-12T21:33:48 GMT" duration-ms="2787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="login()[pri:0, instance:org.example.test.LoginTest@5ef60048]" started-at="2025-01-21T06:33:03 GMT" name="login" finished-at="2025-01-21T06:33:05 GMT" duration-ms="2461" status="PASS">
+        <test-method signature="login()[pri:0, instance:org.example.test.LoginTest@2e6a8155]" started-at="2025-02-12T21:33:48 GMT" name="login" description="login flow check" finished-at="2025-02-12T21:33:51 GMT" duration-ms="2747" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at org.example.test.LoginTest.login(LoginTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.test.LoginTest@5ef60048]" started-at="2025-01-21T06:33:05 GMT" name="tearDown" finished-at="2025-01-21T06:33:05 GMT" duration-ms="100" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.test.LoginTest@2e6a8155]" started-at="2025-02-12T21:34:50 GMT" name="tearDown" finished-at="2025-02-12T21:34:50 GMT" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

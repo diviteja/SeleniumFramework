@@ -3,14 +3,16 @@ package org.example.pageobjects;
 import org.example.pageobjects.base.BaseTest;
 import org.openqa.selenium.*;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+
 public class Loginpage {
 
-    public void loginUser(WebDriver driver, String email, String password){
+    public void loginUser(WebDriver driver, String email, String password) {
         WebElement username = driver.findElement(By.id("email"));
         username.sendKeys(email);
         driver.findElement(By.xpath(passwordXpath())).sendKeys(password);
-        TakesScreenshot ts =  (TakesScreenshot) driver;
-
     }
 
     public String passwordXpath(){ return "//input[@id = 'password']"; }
